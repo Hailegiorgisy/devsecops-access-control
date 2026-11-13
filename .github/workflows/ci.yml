@@ -1,0 +1,31 @@
+name: CI Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      JWT_SECRET: ci-ephemeral-test-signing-key-32-chars-minimum
+      JWT_ISSUER: dinedesk-api
+      JWT_AUDIENCE: dinedesk-clients
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Jest test suite
+        run: npm test

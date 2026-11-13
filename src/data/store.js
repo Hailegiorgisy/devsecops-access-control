@@ -12,7 +12,7 @@ const bcrypt = require("bcryptjs");
 
 const users = [
   {
-    id: "u-bole-waiter",
+    id: "u-bole--waiter",
     name: "Dawit Bekele",
     email: "bole.waiter@dinedesk.et",
     role: "waiter",
