@@ -1,3 +1,4 @@
+// Requirement 3.5: Route Protection
 const { hasPermission } = require("../permissions");
 
 function requireRole(...allowedRoles) {
