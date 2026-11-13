@@ -1,3 +1,4 @@
+// Requirement 4.1: One Policy Function 
 function canAccessOrder(user, order) {
   if (!user || !order) return false;
 
