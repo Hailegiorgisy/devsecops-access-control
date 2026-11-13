@@ -1,3 +1,4 @@
+// Startup Configuration Validation
 require("dotenv").config();
 
 function loadConfig(env = process.env) {
