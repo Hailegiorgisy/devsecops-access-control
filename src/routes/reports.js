@@ -1,3 +1,4 @@
+// Requirement 4.2: Branch Report Scoping
 const express = require("express");
 const { orders } = require("../data/store");
 const { requirePermission } = require("../middleware/authorize");
