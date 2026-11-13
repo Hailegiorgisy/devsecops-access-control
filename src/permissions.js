@@ -1,3 +1,4 @@
+// Requirement 3.4: Permissions Table 
 const ROLE_PERMISSIONS = Object.freeze({
   waiter: ["orders:create", "orders:read"],
   cashier: ["orders:read", "payments:create"],
