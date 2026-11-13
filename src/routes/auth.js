@@ -1,3 +1,6 @@
+// File: src/routes/auth.js
+// Requirement 3.2 - Authentication & JWT Issuance
+
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
