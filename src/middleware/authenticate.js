@@ -1,3 +1,4 @@
+// Middleware authenticate requerement 3.3
 const jwt = require("jsonwebtoken");
 const { findUserById } = require("../data/store");
 
